@@ -4,6 +4,7 @@
 # authors: Robin Ward
 # url: https://github.com/discourse/discourse-oauth2-basic
 
+require 'securerandom'
 require_dependency 'auth/oauth2_authenticator.rb'
 
 enabled_site_setting :oauth2_enabled
@@ -117,7 +118,7 @@ class OAuth2BasicAuthenticator < ::Auth::OAuth2Authenticator
 
     result.name = user_details[:name]
     result.username = user_details[:username]
-    result.email = user_details[:email]
+    result.email = user_details[:email] || "#{SecureRandom.uuid}@yourcompany.com"
     result.email_valid = result.email.present? && SiteSetting.oauth2_email_verified?
     avatar_url = user_details[:avatar]
 
