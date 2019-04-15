@@ -167,7 +167,11 @@ register_css <<CSS
   .sign-up-button {
     display: none;
   }
-  .login-form .create-account-email {
+  .login-form .input.create-account-email {
+    display: none;
+  }
+
+  .login-form .instructions.create-account-email {
     display: none;
   }
 
