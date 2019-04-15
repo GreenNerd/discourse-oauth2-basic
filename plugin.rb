@@ -164,6 +164,9 @@ auth_provider title_setting: "oauth2_button_title",
               full_screen_login_setting: "oauth2_full_screen_login"
 
 register_css <<CSS
+  .sign-up-button {
+    display: none;
+  }
   .login-form .create-account-email {
     display: none;
   }
