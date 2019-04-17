@@ -165,14 +165,14 @@ auth_provider title_setting: "oauth2_button_title",
 
 register_css <<CSS
   .sign-up-button {
-    display: none;
+    display: none !important;
   }
   .login-form .input.create-account-email {
-    display: none;
+    display: none !important;
   }
 
   .login-form .instructions.create-account-email {
-    display: none;
+    display: none !important;
   }
 
   button.btn-social.oauth2_basic {
