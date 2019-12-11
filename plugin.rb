@@ -196,6 +196,13 @@ register_css <<CSS
     background-color: #6d6d6d;
   }
 
+  .create-account-email {
+    display: none!important;
+  }
+  .create-account-email {
+    display: none!important;
+  }
+
 CSS
 
 load File.expand_path("../lib/validators/oauth2_basic/oauth2_fetch_user_details_validator.rb", __FILE__)
