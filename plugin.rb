@@ -191,7 +191,6 @@ auth_provider title_setting: "oauth2_button_title",
               full_screen_login_setting: "oauth2_full_screen_login"
 
 register_css <<CSS
-
   button.btn-social.oauth2_basic {
     background-color: #6d6d6d;
   }
@@ -203,6 +202,17 @@ register_css <<CSS
     display: none!important;
   }
 
+  .sign-up-button {
+    display: none !important;
+  }
+
+  .login-form .input.create-account-email {
+    display: none !important;
+  }
+
+  .login-form .instructions.create-account-email {
+    display: none !important;
+  }
 CSS
 
 load File.expand_path("../lib/validators/oauth2_basic/oauth2_fetch_user_details_validator.rb", __FILE__)
